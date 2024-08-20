@@ -1,0 +1,124 @@
+.profile-page {
+    background-color: #000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+  }
+  
+  .profile-container {
+    background-color: #111;
+    border-radius: 10px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 600px;
+    color: #fff;
+  }
+  
+  .profile-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-image {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .profile-image img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .profile-info {
+    margin-bottom: 2rem;
+    
+  }
+  
+  .profile-info h2 {
+    margin-bottom: 1rem;
+    font-size: 18px;
+  }
+  
+  .profile-info p {
+    margin-bottom: 0.5rem;
+    font-size: 18px;
+  }
+  
+  .profile-info input,
+  .profile-info textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: #222;
+    border: 1px solid #444;
+    color: #fff;
+    border-radius: 5px;
+  }
+  
+  .profile-info textarea {
+    height: 100px;
+    resize: vertical;
+  }
+  
+  .profile-actions {
+    text-align: center;
+  }
+  
+  .profile-actions button {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .profile-actions button:hover {
+    background-color: #ddd;
+  }
+
+  
+  
+  /* Tablet Responsiveness */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .profile-container {
+      padding: 1.5rem;
+    }
+  
+    .profile-image img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 767px) {
+    .profile-page {
+      padding: 1rem;
+    }
+  
+    .profile-container {
+      padding: 1rem;
+    }
+  
+    .profile-image img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .profile-info h2 {
+      font-size: 1.5rem;
+    }
+  
+    .profile-actions button {
+      padding: 0.4rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  }

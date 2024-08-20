@@ -1,0 +1,18 @@
+/* Desktop (default) */
+body {
+  font-size: 16px;
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  body {
+    font-size: 12px;
+  }
+}

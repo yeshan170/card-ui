@@ -1,0 +1,142 @@
+.footer {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    font-family: "Cinzel", serif;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-info h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center;
+  }
+  
+  .contact-info p svg {
+    margin-right: 0.5rem;
+  }
+  
+  .footer-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-links h3 {
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .payment-methods {
+    margin-bottom: 2rem;
+  }
+  
+  .payment-methods img {
+    max-width: 100%;
+  }
+  
+  .copyright {
+    text-align: center;
+  }
+  
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    .contact-info,
+    .footer-links {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    .contact-info > div,
+    .footer-links > div {
+      margin-bottom: 1.5rem;
+    }
+  
+    .contact-info p {
+      justify-content: center;
+    }
+  
+    .social-icons {
+      justify-content: center;
+    }
+  
+    .payment-methods {
+      text-align: center;
+    }
+  
+    .footer {
+      padding: 1.5rem;
+    }
+  
+    .contact-info h3,
+    .footer-links h3 {
+      font-size: 1.1rem;
+    }
+  
+    .contact-info p,
+    .footer-links li {
+      font-size: 0.9rem;
+    }
+  
+    .copyright p {
+      font-size: 0.8rem;
+    }
+  
+    /* Center all content in mobile mode */
+    .container > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-links ul {
+      text-align: center;
+    }
+  }
+  
+  /* For even smaller screens */
+  @media (max-width: 480px) {
+    .footer {
+      padding: 1rem;
+    }
+  
+    .contact-info,
+    .footer-links {
+      gap: 1rem;
+    }
+  
+    .social-icons {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }

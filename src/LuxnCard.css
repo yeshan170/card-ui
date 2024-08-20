@@ -1,0 +1,114 @@
+
+.luxn-container {
+  background-color: #000;
+  color: #fff;
+  min-height: 90vh;
+  font-family: "Cinzel", serif;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.content {
+  text-align: center;
+  padding: 1rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 0;
+}
+
+button {
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.phone-mockup {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.phone-mockup img {
+  max-width: 80%;
+  height: auto;
+}
+
+/* Tablet view */
+@media screen and (min-width: 768px) {
+  main {
+    flex-direction: row;
+    padding: 1.5rem;
+  }
+
+  .content {
+    text-align: left;
+    padding: 1.5rem;
+    flex: 1;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    margin-left: -4px;
+  }
+
+  .phone-mockup {
+    margin-top: 0;
+    flex: 1;
+  }
+
+  .phone-mockup img {
+    max-width: 70%;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 1024px) {
+  main {
+    padding: 2rem;
+  }
+
+  .content {
+    padding: 2rem;
+  }
+
+  p {
+    font-size: 1.9rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    margin-left: -6px;
+  }
+
+  button {
+    padding: 1rem 2rem;
+  }
+
+  .phone-mockup img {
+    max-width: 59%;
+  }
+}
